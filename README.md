@@ -1,6 +1,7 @@
 # How to run 
 
-1. To have a rabbit mq server: docker run -d -p 15672:15672 -p 5672:5672 --name demo rabbitmq:3-management
+1. To have a rabbit mq server, example: docker run -d -p 15672:15672 -p 5672:5672 --name demo rabbitmq:3-management
+(adjust ports)
 2. Change the logs path in application.properties from both modules
 3. Run deploy.sh or run both modules: HTTP and calculator
 4. Access module HTTP in {server.address}:{server.port} configured on application.properties from module HTTP
@@ -18,7 +19,7 @@ Check the configurable properties of the application in application.properties f
 
 # Modules
 
-- Operands are received as strings in both modules, in order to preserve their precision. Only on the calculator implementation it's decided what java number type to use.
+- Operands are received as strings in both modules, in order to preserve their precision. Only on the calculator implementation it's decided what java number representation to use(float, double, BigDecimal, etc) depending on factors such as performance and precision. Currently only contains a BigDecimal implementation(BigDecimalCalculator.java).
 
 1. Common module
 
