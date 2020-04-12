@@ -44,8 +44,7 @@ public class CalculatorController {
 
         // Get operation type and return 404 Not Found if it is not valid
         String requestId = MDC.get(Constants.REQUEST_ID_KEY);
-        String requestedOperationType = operator.toUpperCase();
-        OperationType operationType =  OperationType.from(requestedOperationType);
+        OperationType operationType =  OperationType.from(operator);
 
         HttpStatus validationStatus = validateRequest(operationType, a, b);
 

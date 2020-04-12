@@ -9,7 +9,7 @@ public enum OperationType {
 
     public static OperationType from(String name){
         try {
-           return OperationType.valueOf(name);
+           return OperationType.valueOf(name.toUpperCase());
         }
         catch(IllegalArgumentException e){
             return null;
