@@ -39,4 +39,4 @@ Check the configurable properties of the application in application.properties f
 - the listener obtains the requestId from each POJO sent by the HTTP module and stores it in MDC to show it on logs
 - BigDecimalCalculator.java does not have logic to deal with different number formats by locale. Also, in its divide operation params like round type and scale are defined on application.properties 
 
-Notes: RabbitMqSender.java sender; RabbitMqListener.java listener and BigDecimalCalculator.java classes implement interfaces so it could have different implementations depending on the communication channel used(HTTP, rabbitMQ, JMX, etc) and the calculator
+Notes: RabbitMqSender.java sender; RabbitMqListener.java listener and BigDecimalCalculator.java classes implement interfaces so it could have different implementations depending on the communication channel used(HTTP, rabbitMQ, JMX, etc)
