@@ -27,7 +27,7 @@ public class MdcInterceptor implements HandlerInterceptor {
 
     @Override
     public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex){
-        //MDC.remove(Constants.REQUEST_ID_KEY);
+        MDC.remove(Constants.REQUEST_ID_KEY);
     }
 
     private String getId() {

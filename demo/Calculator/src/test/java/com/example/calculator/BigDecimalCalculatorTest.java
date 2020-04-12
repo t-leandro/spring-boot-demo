@@ -56,8 +56,8 @@ public class BigDecimalCalculatorTest {
     public void division() {
         String result = calculator.division("1","2");
         Assert.assertEquals(result, "0.5000000000");
-        // TODO : what?
-        calculator.division("1","0");
-        Assert.assertEquals(result, "0.5000000000");
+
+        result = calculator.division("1","0");
+        Assert.assertNull(result);
     }
 }

@@ -11,7 +11,7 @@ public enum OperationType {
         try {
            return OperationType.valueOf(name.toUpperCase());
         }
-        catch(IllegalArgumentException e){
+        catch(Exception e){
             return null;
         }
     }

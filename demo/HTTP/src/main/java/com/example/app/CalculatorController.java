@@ -99,7 +99,7 @@ public class CalculatorController {
         }
 
         if(!isNumeric(a) || !isNumeric(b)){
-            LOG.warn("Returning 40O Bad request to invalid operand(s): a={} and b={}", a ,b);
+            LOG.warn("Returning 400 Bad request to invalid operand(s): a={} and b={}", a ,b);
             return HttpStatus.BAD_REQUEST;
         }
 
