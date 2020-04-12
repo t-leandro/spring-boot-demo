@@ -1,0 +1,20 @@
+plugins {
+    id 'org.springframework.boot' version '2.2.6.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.9.RELEASE'
+}
+
+dependencies {
+    implementation project(':calculator-common')
+    //implementation 'org.jetbrains:annotations:16.0.2'
+    //implementation 'org.springframework.boot:spring-boot-starter-amqp'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+
+    testImplementation('org.springframework.boot:spring-boot-starter-test') {
+        exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+    }
+    testImplementation 'org.springframework.amqp:spring-rabbit-test'
+}
+
+test {
+    useJUnitPlatform()
+}

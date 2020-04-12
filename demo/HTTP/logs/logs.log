@@ -1,0 +1,71 @@
+[id : ] [2020-04-10 19:26:51,340] [org.springframework.boot.StartupInfoLogger] [main] [55] [INFO ] Starting DemoApplication on PT-PF0WTAJ1 with PID 10540 (C:\Users\atleandro\Downloads\demo\demo\HTTP\build\classes\java\main started by atleandro in C:\Users\atleandro\Downloads\demo\demo)
+[id : ] [2020-04-10 19:26:51,343] [org.springframework.boot.StartupInfoLogger] [main] [56] [DEBUG] Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+[id : ] [2020-04-10 19:26:51,344] [org.springframework.boot.SpringApplication] [main] [651] [INFO ] No active profile set, falling back to default profiles: default
+[id : ] [2020-04-10 19:26:56,342] [org.springframework.boot.StartupInfoLogger] [main] [61] [INFO ] Started DemoApplication in 5.484 seconds (JVM running for 6.085)
+[id : ce2f1771-197b-4afb-85e5-7e01e948c646] [2020-04-10 19:27:00,487] [com.example.demo.CalculatorController] [http-nio-8080-exec-1] [26] [DEBUG] hey
+[id : ] [2020-04-10 19:30:39,667] [org.springframework.boot.StartupInfoLogger] [main] [55] [INFO ] Starting DemoApplication on PT-PF0WTAJ1 with PID 10664 (C:\Users\atleandro\Downloads\demo\demo\HTTP\build\classes\java\main started by atleandro in C:\Users\atleandro\Downloads\demo\demo)
+[id : ] [2020-04-10 19:30:39,671] [org.springframework.boot.StartupInfoLogger] [main] [56] [DEBUG] Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+[id : ] [2020-04-10 19:30:39,671] [org.springframework.boot.SpringApplication] [main] [651] [INFO ] No active profile set, falling back to default profiles: default
+[id : ] [2020-04-10 19:30:44,714] [org.springframework.boot.StartupInfoLogger] [main] [61] [INFO ] Started DemoApplication in 5.506 seconds (JVM running for 6.166)
+[id : 5dd444d4-0340-4ee0-8520-04be7321040f] [2020-04-10 19:31:32,449] [com.example.demo.CalculatorController] [http-nio-8080-exec-1] [26] [DEBUG] hey
+[id : ] [2020-04-10 19:39:35,950] [org.springframework.boot.StartupInfoLogger] [main] [55] [INFO ] Starting DemoApplication on PT-PF0WTAJ1 with PID 1680 (C:\Users\atleandro\Downloads\demo\demo\HTTP\build\classes\java\main started by atleandro in C:\Users\atleandro\Downloads\demo\demo)
+[id : ] [2020-04-10 19:39:35,954] [org.springframework.boot.StartupInfoLogger] [main] [56] [DEBUG] Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+[id : ] [2020-04-10 19:39:35,955] [org.springframework.boot.SpringApplication] [main] [651] [INFO ] No active profile set, falling back to default profiles: default
+[id : ] [2020-04-10 19:39:40,959] [org.springframework.boot.StartupInfoLogger] [main] [61] [INFO ] Started DemoApplication in 5.432 seconds (JVM running for 6.039)
+[id : e664bfb6-3466-4415-a53e-39edf272c4d7] [2020-04-10 19:39:53,152] [com.example.demo.CalculatorController] [http-nio-8080-exec-1] [26] [DEBUG] hey
+[id : ] [2020-04-10 19:42:33,348] [org.springframework.boot.StartupInfoLogger] [main] [55] [INFO ] Starting DemoApplication on PT-PF0WTAJ1 with PID 17600 (C:\Users\atleandro\Downloads\demo\demo\HTTP\build\classes\java\main started by atleandro in C:\Users\atleandro\Downloads\demo\demo)
+[id : ] [2020-04-10 19:42:33,352] [org.springframework.boot.StartupInfoLogger] [main] [56] [DEBUG] Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+[id : ] [2020-04-10 19:42:33,353] [org.springframework.boot.SpringApplication] [main] [651] [INFO ] No active profile set, falling back to default profiles: default
+[id : ] [2020-04-10 19:42:38,532] [org.springframework.boot.StartupInfoLogger] [main] [61] [INFO ] Started DemoApplication in 5.615 seconds (JVM running for 6.246)
+[id : 0a2b8b09-7f21-40c7-9cb5-f442a3d2c2d1] [2020-04-10 19:42:44,374] [com.example.demo.CalculatorController] [http-nio-8080-exec-1] [26] [DEBUG] hey
+[id : ] [2020-04-10 19:45:35,331] [org.springframework.boot.StartupInfoLogger] [main] [55] [INFO ] Starting DemoApplication on PT-PF0WTAJ1 with PID 11484 (C:\Users\atleandro\Downloads\demo\demo\HTTP\build\classes\java\main started by atleandro in C:\Users\atleandro\Downloads\demo\demo)
+[id : ] [2020-04-10 19:45:35,335] [org.springframework.boot.StartupInfoLogger] [main] [56] [DEBUG] Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+[id : ] [2020-04-10 19:45:35,336] [org.springframework.boot.SpringApplication] [main] [651] [INFO ] No active profile set, falling back to default profiles: default
+[id : ] [2020-04-10 19:45:40,222] [org.springframework.boot.StartupInfoLogger] [main] [61] [INFO ] Started DemoApplication in 5.304 seconds (JVM running for 5.937)
+[id : 50f44a7b-c6be-4bcc-9b5e-72aa07345b4f] [2020-04-10 19:45:46,293] [com.example.demo.CalculatorController] [http-nio-8080-exec-1] [25] [DEBUG] hey
+[id : ] [2020-04-10 22:24:48,709] [org.springframework.boot.StartupInfoLogger] [main] [55] [INFO ] Starting DemoApplication on PT-PF0WTAJ1 with PID 11780 (C:\Users\atleandro\Downloads\demo\demo\HTTP\build\classes\java\main started by atleandro in C:\Users\atleandro\Downloads\demo\demo)
+[id : ] [2020-04-10 22:24:48,711] [org.springframework.boot.StartupInfoLogger] [main] [56] [DEBUG] Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+[id : ] [2020-04-10 22:24:48,711] [org.springframework.boot.SpringApplication] [main] [651] [INFO ] No active profile set, falling back to default profiles: default
+[id : ] [2020-04-10 22:24:53,719] [org.springframework.boot.StartupInfoLogger] [main] [61] [INFO ] Started DemoApplication in 5.464 seconds (JVM running for 6.092)
+[id : 6c291e8b-8085-436a-be48-d63e5f9898cd] [2020-04-10 22:25:37,857] [com.example.demo.CalculatorController] [http-nio-8080-exec-1] [25] [DEBUG] hey
+[id : b1393b8d-9437-446a-b880-012aa0589ccc] [2020-04-10 22:26:34,371] [com.example.demo.CalculatorController] [http-nio-8080-exec-3] [25] [DEBUG] hey
+[id : 3a7664e6-7520-442e-bb44-c482502c4b4d] [2020-04-10 22:26:36,533] [com.example.demo.CalculatorController] [http-nio-8080-exec-7] [25] [DEBUG] hey
+[id : ed13a98b-ceb5-465a-950c-62a1f47e84ed] [2020-04-10 22:26:44,085] [com.example.demo.CalculatorController] [http-nio-8080-exec-4] [25] [DEBUG] hey
+[id : 082f3675-4ffc-4610-b29f-808637188455] [2020-04-10 22:26:47,180] [com.example.demo.CalculatorController] [http-nio-8080-exec-5] [25] [DEBUG] hey
+[id : 38c31530-b28c-440f-8adb-402964b3b6c5] [2020-04-10 22:26:54,085] [com.example.demo.CalculatorController] [http-nio-8080-exec-9] [25] [DEBUG] hey
+[id : e78d3ec4-a9a7-43fd-9cb4-09f2dbcfce6b] [2020-04-10 22:27:10,178] [com.example.demo.CalculatorController] [http-nio-8080-exec-10] [25] [DEBUG] hey
+[id : 36c6e563-82af-46d7-9607-54e2ecb70afb] [2020-04-10 22:27:19,740] [com.example.demo.CalculatorController] [http-nio-8080-exec-1] [25] [DEBUG] hey
+[id : ea12cdc3-1dae-4549-961b-cce257cec2f9] [2020-04-10 22:32:51,883] [com.example.demo.CalculatorController] [http-nio-8080-exec-7] [25] [DEBUG] hey
+[id : ] [2020-04-10 22:45:31,430] [org.springframework.boot.StartupInfoLogger] [main] [55] [INFO ] Starting DemoApplication on PT-PF0WTAJ1 with PID 9468 (C:\Users\atleandro\Downloads\demo\demo\HTTP\build\classes\java\main started by atleandro in C:\Users\atleandro\Downloads\demo\demo)
+[id : ] [2020-04-10 22:45:31,432] [org.springframework.boot.StartupInfoLogger] [main] [56] [DEBUG] Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+[id : ] [2020-04-10 22:45:31,432] [org.springframework.boot.SpringApplication] [main] [651] [INFO ] No active profile set, falling back to default profiles: default
+[id : ] [2020-04-10 22:45:36,900] [org.springframework.boot.StartupInfoLogger] [main] [61] [INFO ] Started DemoApplication in 5.955 seconds (JVM running for 6.572)
+[id : 0102c9d7-5745-4d7e-9ba3-3bddc2d18596] [2020-04-10 22:45:44,831] [com.example.demo.CalculatorController] [http-nio-8080-exec-1] [30] [DEBUG] hey
+[id : 83b5c765-26a0-4e3d-8a19-8414d55db8eb] [2020-04-10 22:45:47,634] [com.example.demo.CalculatorController] [http-nio-8080-exec-3] [30] [DEBUG] hey
+[id : ] [2020-04-10 22:47:24,349] [org.springframework.boot.StartupInfoLogger] [main] [55] [INFO ] Starting DemoApplication on PT-PF0WTAJ1 with PID 22928 (C:\Users\atleandro\Downloads\demo\demo\HTTP\build\classes\java\main started by atleandro in C:\Users\atleandro\Downloads\demo\demo)
+[id : ] [2020-04-10 22:47:24,350] [org.springframework.boot.StartupInfoLogger] [main] [56] [DEBUG] Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+[id : ] [2020-04-10 22:47:24,351] [org.springframework.boot.SpringApplication] [main] [651] [INFO ] No active profile set, falling back to default profiles: default
+[id : ] [2020-04-10 22:47:30,134] [org.springframework.boot.StartupInfoLogger] [main] [61] [INFO ] Started DemoApplication in 6.306 seconds (JVM running for 7.104)
+[id : f71aed74-6eaf-4db9-be80-62f6e9cb0fd8] [2020-04-10 22:47:36,466] [com.example.demo.CalculatorController] [http-nio-8080-exec-4] [30] [DEBUG] hey
+[id : 9884f843-d861-4fde-9e2e-3b74ef29590b] [2020-04-10 22:48:29,835] [com.example.demo.CalculatorController] [http-nio-8080-exec-8] [30] [DEBUG] hey
+[id : 8abd9e7e-51a9-40da-81a6-ca6d86e0302b] [2020-04-10 22:49:01,991] [com.example.demo.CalculatorController] [http-nio-8080-exec-1] [30] [DEBUG] hey
+[id : aa23e1ec-fac4-456c-91bc-61f259074586] [2020-04-10 22:49:55,099] [com.example.demo.CalculatorController] [http-nio-8080-exec-10] [30] [DEBUG] hey
+[id : ] [2020-04-10 22:55:34,096] [org.springframework.boot.StartupInfoLogger] [main] [55] [INFO ] Starting DemoApplication on PT-PF0WTAJ1 with PID 14444 (C:\Users\atleandro\Downloads\demo\demo\HTTP\build\classes\java\main started by atleandro in C:\Users\atleandro\Downloads\demo\demo)
+[id : ] [2020-04-10 22:55:34,097] [org.springframework.boot.StartupInfoLogger] [main] [56] [DEBUG] Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+[id : ] [2020-04-10 22:55:34,098] [org.springframework.boot.SpringApplication] [main] [651] [INFO ] No active profile set, falling back to default profiles: default
+[id : ] [2020-04-10 22:55:39,343] [org.springframework.boot.StartupInfoLogger] [main] [61] [INFO ] Started DemoApplication in 5.68 seconds (JVM running for 6.284)
+[id : f11b20c6-e8a3-4634-ac4e-13708367deea] [2020-04-10 22:55:49,500] [com.example.demo.CalculatorController] [http-nio-8080-exec-1] [30] [DEBUG] hey
+[id : ] [2020-04-10 22:57:44,392] [org.springframework.boot.StartupInfoLogger] [main] [55] [INFO ] Starting DemoApplication on PT-PF0WTAJ1 with PID 7244 (C:\Users\atleandro\Downloads\demo\demo\HTTP\build\classes\java\main started by atleandro in C:\Users\atleandro\Downloads\demo\demo)
+[id : ] [2020-04-10 22:57:44,393] [org.springframework.boot.StartupInfoLogger] [main] [56] [DEBUG] Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+[id : ] [2020-04-10 22:57:44,393] [org.springframework.boot.SpringApplication] [main] [651] [INFO ] No active profile set, falling back to default profiles: default
+[id : ] [2020-04-10 22:57:49,559] [org.springframework.boot.StartupInfoLogger] [main] [61] [INFO ] Started DemoApplication in 5.584 seconds (JVM running for 6.231)
+[id : 20900655-e030-48dc-b540-c4143d127f53] [2020-04-10 22:57:57,440] [com.example.demo.CalculatorController] [http-nio-8080-exec-2] [30] [DEBUG] hey
+[id : 49ca4718-7e11-47ae-9323-c736c2244fc2] [2020-04-10 22:58:01,804] [com.example.demo.CalculatorController] [http-nio-8080-exec-3] [30] [DEBUG] hey
+[id : 1e1e61e3-d12f-435f-bd43-886da851a8ef] [2020-04-10 22:58:03,150] [com.example.demo.CalculatorController] [http-nio-8080-exec-4] [30] [DEBUG] hey
+[id : 67cb9208-2f00-4dd7-9d27-5165768a2a9a] [2020-04-10 22:58:04,004] [com.example.demo.CalculatorController] [http-nio-8080-exec-6] [30] [DEBUG] hey
+[id : 442262d4-59bf-4882-950c-5718c60cd8c8] [2020-04-10 22:58:04,736] [com.example.demo.CalculatorController] [http-nio-8080-exec-9] [30] [DEBUG] hey
+[id : 7443adac-29ce-4333-a0fe-1c49bc9f7483] [2020-04-10 22:58:05,320] [com.example.demo.CalculatorController] [http-nio-8080-exec-2] [30] [DEBUG] hey
+[id : 58611774-b633-4013-9d4d-96847ee18134] [2020-04-10 22:58:05,951] [com.example.demo.CalculatorController] [http-nio-8080-exec-3] [30] [DEBUG] hey
+[id : a081e0d3-c2c3-4016-ada7-5c5ca2331538] [2020-04-10 22:58:06,457] [com.example.demo.CalculatorController] [http-nio-8080-exec-4] [30] [DEBUG] hey
+[id : bd849a31-5501-4d5b-a4ee-f1fb983fc1ac] [2020-04-10 22:58:07,060] [com.example.demo.CalculatorController] [http-nio-8080-exec-6] [30] [DEBUG] hey
+[id : c1598ee2-c4c8-42fe-8ecc-a6de59fcba21] [2020-04-10 22:58:07,649] [com.example.demo.CalculatorController] [http-nio-8080-exec-10] [30] [DEBUG] hey
