@@ -5,7 +5,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.scheduling.annotation.EnableAsync;
 
 // TODO : logs - check it
-// TODO : tests?
 // TODO : check request id in http response
 // TODO : clean code
 

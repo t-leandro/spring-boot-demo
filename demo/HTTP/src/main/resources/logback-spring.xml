@@ -1,33 +1,34 @@
 <?xml version = "1.0" encoding = "UTF-8"?>
+
 <configuration>
+    <springProperty scope="context" name="LOG_ROOT" source="app.logs.path"/>
+    <springProperty scope="context" name="LEVEL" source="app.logs.level"/>
     <appender name = "STDOUT" class = "ch.qos.logback.core.ConsoleAppender">
         <encoder>
-            <pattern>[%d{yyyy-MM-dd'T'HH:mm:ss.sss'Z'}] [%C] [%t] [%L] [%-5p] %m%n</pattern>
+            <pattern>[request id : %X{id}] [%d{yyyy-MM-dd'T'HH:mm:ss.sss'Z'}] [%C] [%t] [%L] [%-5p] %m%n</pattern>
         </encoder>
     </appender>
 
     <appender name = "FILE" class = "ch.qos.logback.core.FileAppender">
-        <File>C:/Users/atleandro/Downloads/demo/demo/HTTP/logs/logs.log</File>
+        <File>${LOG_ROOT}/httpLogs.log</File>
         <encoder>
-            <pattern>[id : %X{id}] [%d] [%C] [%t] [%L] [%-5p] %m%n</pattern>
+            <pattern>[request id : %X{requestId}] [%d] [%C] [%t] [%L] [%-5p] %m%n</pattern>
         </encoder>
     </appender>
 
     <appender name = "FILE2" class = "ch.qos.logback.core.FileAppender">
-        <File>C:/Users/atleandro/Downloads/demo/demo/HTTP/logs/logsSpring.log</File>
+        <File>${LOG_ROOT}/springLogs.log</File>
         <encoder>
-            <pattern>[id : %X{id}] [%d] [%C] [%t] [%L] [%-5p] %m%n</pattern>
+            <pattern>[id : %X{requestId}] [%d] [%C] [%t] [%L] [%-5p] %m%n</pattern>
         </encoder>
     </appender>
 
-    <logger name="com.example.demo" level="debug" additivity="false">
+    <logger name="com.example" level="${LEVEL}" additivity="false">
         <appender-ref ref="FILE" />
         <appender-ref ref="STDOUT" />
     </logger>
 
-
-
-    <root level = "debug">
+    <root level = "${LEVEL}">
         <appender-ref ref="FILE2" />
         <appender-ref ref = "STDOUT"/>
     </root>

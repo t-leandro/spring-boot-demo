@@ -9,13 +9,12 @@ import org.slf4j.LoggerFactory;
 import org.slf4j.MDC;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitter;
 
+import java.util.Map;
 import java.util.concurrent.Executor;
 
 /**
@@ -31,7 +30,9 @@ public class CalculatorController {
     @Autowired
     private Sender sender;
 
-    @GetMapping("/calculator/{operator}")
+    @RequestMapping(value = "/calculator/{operator}",
+            method = RequestMethod.GET,
+            produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<ResponseBodyEmitter> calculator(
             @PathVariable("operator") String operator,
             @RequestParam(value = "a", defaultValue = "0") String a,
@@ -41,32 +42,68 @@ public class CalculatorController {
         // Create response
         ResponseBodyEmitter emitter = new ResponseBodyEmitter();
 
-        // Get operation type and return 400 Not Found if it is not valid
+        // Get operation type and return 404 Not Found if it is not valid
         String requestId = MDC.get(Constants.REQUEST_ID_KEY);
         String requestedOperationType = operator.toUpperCase();
         OperationType operationType =  OperationType.from(requestedOperationType);
 
-        if (operationType == null) {
-            LOG.warn("Returning 404 to invalid operator {}", operator);
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
+        HttpStatus validationStatus = validateRequest(operationType, a, b);
+
+        if (validationStatus != null) {
+            return ResponseEntity.status(validationStatus).body(null);
         }
 
-        // Get result from Calculator module
-        executor.execute(() -> {
+        Map<String, String> contextMap = MDC.getCopyOfContextMap();
 
+        // Get result from Calculator module asynchronously
+        executor.execute(() -> {
             try {
+                // MDC context is stored by thread
+                // Copy MDC context of http request to this thread
+                MDC.setContextMap(contextMap);
+
                 Operation request = new Operation(operationType, a, b, requestId);
                 String result = sender.send(request);
-                emitter.send(result);
+
+                if (result == null){
+                    throw (new Exception("Calculator module could not perform the operation"));
+                }
+
+                emitter.send(new OperationResponse(result));
+                emitter.complete();
             }
             catch (Exception e) {
                LOG.error("Could not obtain valid result", e);
                emitter.completeWithError(e);
             }
-
-            emitter.complete();
+            finally {
+                MDC.clear();
+            }
         });
 
         return new ResponseEntity<>(emitter, HttpStatus.OK);
+    }
+
+    private static boolean isNumeric(String str) {
+        try {
+            Double.parseDouble(str);
+            return true;
+        } catch(NumberFormatException e){
+            return false;
+        }
+    }
+
+    private static HttpStatus validateRequest (OperationType operationType, String a, String b) {
+        if (operationType == null) {
+            LOG.warn("Returning 404 Not found to invalid operator");
+            return HttpStatus.NOT_FOUND;
+        }
+
+        if(!isNumeric(a) || !isNumeric(b)){
+            LOG.warn("Returning 40O Bad request to invalid operand(s): a={} and b={}", a ,b);
+            return HttpStatus.BAD_REQUEST;
+        }
+
+        return null;
     }
 }
