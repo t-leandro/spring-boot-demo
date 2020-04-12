@@ -28,15 +28,15 @@ Check the configurable properties of the application in application.properties f
 
 - Receives an HTTP get request in CalculatorController.java to perform an operation for operands a and b
 - Uses a handler interceptor to generate a unique id per HTTP request and store it in MDC (used in logs)
-- Requests are non-blocking, on each one a different thread, from an executor, is used to communicate and get the result from the calculator module and on completion it uses the ResponseBodyEmitter to send the request. The HTTP request MDC context is copied to that thread.
-- Sends a request to the calculator module thru the RabbitMqSender.java using rabbit mq
-- RabbitMqSender.java uses rabbitTemplate.convertSendAndReceive() method to as a client send a request message and get the server  (calculator module) response message 
+- Requests are non-blocking, on each one a different thread, from an executor, is used to communicate and get the result from the calculator module and on completion it uses the ResponseBodyEmitter to send the response. The HTTP request MDC context is copied to that thread.
+- Sends a request to the calculator module through the RabbitMqSender.java using rabbit mq
+- RabbitMqSender.java uses rabbitTemplate.convertSendAndReceive() method to send a request message to the calculator process and receive the response using the reply to
 
 
 3. Calculator module
 
-- It receives events thru rabbit mq in RabbitMqListener.java listener and calls BigDecimalCalculator.java to execute the operation
-- The listener on each request it receives from the client a request id and stores it in MDC to show it on logs
-- BigDecimalCalculator.java do not have logic to deal with different number formats by locale. Also, in its divide operation params like round type and scale are defined on application.properties 
+- It receives events through rabbit mq in RabbitMqListener.java listener and calls BigDecimalCalculator.java to execute the operation
+- the listener obtains the requestId from each POJO sent by the HTTP module and stores it in MDC to show it on logs
+- BigDecimalCalculator.java does not have logic to deal with different number formats by locale. Also, in its divide operation params like round type and scale are defined on application.properties 
 
-Notes: RabbitMqSender.java sender; RabbitMqListener.java listener and BigDecimalCalculator.java classes implement interfaces so the communication between modules and the calculator can have different implementations
+Notes: RabbitMqSender.java sender; RabbitMqListener.java listener and BigDecimalCalculator.java classes implement interfaces so it could have different implementations depending on the communication channel used(HTTP, rabbitMQ, JMX, etc) and the calculator
