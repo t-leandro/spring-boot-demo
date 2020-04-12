@@ -11,7 +11,6 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 
-// TODO : common
 @Configuration
 @PropertySource("classpath:application.properties")
 public class RabbitMqConfig

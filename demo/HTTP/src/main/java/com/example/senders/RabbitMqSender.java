@@ -13,7 +13,7 @@ public class RabbitMqSender implements Sender {
 
     @Autowired
     private RabbitTemplate rabbitTemplate;
-    // TODO : must be serializable?
+
     public<T> String send(T request) {
         return (String) rabbitTemplate.convertSendAndReceive(queueName, request);
     }
